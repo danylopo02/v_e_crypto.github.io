@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    background-image: url('./image/bg_section_title.png');
+    width: 100%;
+    height: 100vh;
+    color: #797777;
+    overflow: hidden;
+}
+
+/*  ============== HEADER ==================  */
+
+.main_header {
+    width: 100%;
+    height: auto;
+    /* background-color: #000000; */
+}
+.main_header .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background-color: #F3511F;
+}
+
+.main_header .marquee .marquee-inner {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+    margin: auto;
+    height: 100%;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.main_header .marquee .marquee-inner .marquee-text {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    /* gap: 15px;; */
+}
+.main_header .marquee .marquee-inner .marquee-text img {
+    padding: 0 0.5rem;
+}
+.main_header .marquee .marquee-inner .marquee-text span {
+    padding: 0 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.main_header .header_wrap {
+    padding: 44px 98px 35px 71px;
+}
+.main_header .header_wrap .header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_header .header_wrap .header_block .header_side_left,
+.main_header .header_wrap .header_block .header_side_right {
+    display: flex;
+    align-items: center;
+}
+.main_header .header_wrap .header_block .header_side_left a,
+.main_header .header_wrap .header_block .header_side_right a {
+    font-size: 25px;
+    font-weight: 400;
+    color: #797777;
+    text-decoration: none;
+    padding-left: 70px;
+    text-transform: uppercase;
+}
+.main_header .header_wrap .header_block .header_side_left a:hover,
+.main_header .header_wrap .header_block .header_side_right a:hover { 
+    color: #fff;
+    transition: 1s ease-in-out;
+}
+
+/* main {
+    padding: 44px 98px 35px 71px;
+} */
+
+
+.slider-container {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    /* overflow-y: scroll; */
+    scroll-snap-type: y mandatory;
+}
+.slide {
+    scroll-snap-align: start;
+}
+
+/* ================= SECTION 1 ================= */
+
+.vse_crypto_page_title {
+    padding: 44px 100px 35px 71px;
+    height: 75vh;
+}
+.vse_crypto_page_title .container {
+    display: flex;
+    flex-direction: column;
+}
+.vse_crypto_page_title .container .program_count_lesson {
+    display: grid;
+    justify-content: end;
+    gap: 15px;
+}
+.vse_crypto_page_title .container .program_count_lesson p {
+    font-weight: 400;
+    font-size: 40px;
+    color: #797777;
+    margin: 0;
+    text-transform: uppercase;
+}
+.vse_crypto_page_title .container .title_message {
+    margin: 110px auto 180px auto;
+}
+.vse_crypto_page_title .container .detail_info {
+    display: flex;
+    justify-content: space-between;
+}
+.vse_crypto_page_title .container .detail_info .text_invite {
+    width: 391px;
+    height: 108px;
+}
+.vse_crypto_page_title .container .detail_info .text_invite p {
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0;
+}
+.vse_crypto_page_title .container .detail_info .text_invite p:nth-child(1) {
+    margin-left: 60px;
+}
+.vse_crypto_page_title .container .detail_info .next_page {
+    display: flex;
+    gap: 40px;
+    height: 93px;
+}
+.vse_crypto_page_title .container .detail_info .next_page span {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+/* =================== SECTION 2 ================== */
+
+.vse_crypto_page_for_whom {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./image/bg_section_for_whom.png');
+}
+.vse_crypto_page_for_whom .for_whom_title {
+    height: 85px;
+    display: flex;
+    padding: 27px 71px 28px 100px;
+    align-items: center;
+}
+.vse_crypto_page_for_whom .for_whom_title span {
+    color: #000;
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.vse_crypto_page_for_whom .for_whom_title span:nth-child(3) {
+    color: #F3511F;
+}
+.vse_crypto_page_for_whom .description_wrap {
+    display: grid;
+    gap: 15px;
+    padding: 0 71px 0 100px;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block {
+    display: flex;
+    justify-content: space-between;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block p {
+    color: #797777;
+    font-weight: 400;
+    margin: 0;
+    font-size: 25px;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text {
+    width: 665px;
+    height: 280px;
+    /* padding: 35px 70px 50px 35px; */
+}
+.vse_crypto_page_for_whom .description_wrap .description_block:nth-child(1) .description_text {
+    background-color: #F3511F;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block:nth-child(2) .description_text {
+    background-color: #000000;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block:nth-child(3) .description_text {
+    background-color: #797777;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text .title {
+    display: flex;
+    gap: 25px;
+    margin-top: 34px;
+    margin-left: 37px;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text .title h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text .title img {
+    display: flex;
+    /* height: 35px;
+    width: 35px; */
+}
+.vse_crypto_page_for_whom .description_wrap .description_block .description_text p {
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: 200;
+    margin: 0;
+    width: 558px;
+    height: 124px;
+    margin-left: 37px;
+    margin-top: 37px;
+}
+/* ====================== You'll Learn ======================= */
+.learn {
+    width: 100%;
+    /* height: 100vh; */
+    height: auto;
+    background-color: #000000;
+}
+/* .learn .learn_wrap  {
+
+} */
+.learn .learn_wrap .title_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 35px 89px 89px 89px; */
+    padding: 0px 89px 60px 89px;
+}
+.learn .learn_wrap .title_block  .title_info {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.learn .learn_wrap .title_block .title_word {
+    font-size: 134px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+}
+.learn .learn_wrap .title_block .title_word:nth-of-type(2) {
+    color:#F3511F;
+}
+.learn .learn_wrap .title_block .title_info span {
+    height: 80px;
+    width: 700px;
+    text-align: center;
+    color: #797777;
+    font-weight: 100;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn .learn_wrap .steps_block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background-image: url(./image/bg_steps_block.png);
+    background-repeat: no-repeat;
+    padding: 0;
+    background-position-y: 50%;
+    position: relative;
+}
+.learn .learn_wrap .steps_block .item_wrap {
+    padding: 0 69px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.learn .learn_wrap .steps_block .item_wrap .item {
+    width: 400px;
+    height: 385px;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    /* gap: 25px; */
+    gap: 0;
+}
+.learn .learn_wrap .steps_block .item_wrap .item .item_step_num {
+    border-radius: 50%;
+    background-color: #F3511F;
+    justify-content: center;
+    font-size: 64px;
+    font-weight: 700;
+    width: 160px;
+    height: 160px;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.learn .learn_wrap .steps_block .item_wrap .item .item_subtitle {
+    display: flex;
+    gap: 25px;
+    font-size: 40px;
+    font-weight: 200;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    align-items: center;
+}
+.learn .learn_wrap .steps_block .item_wrap .item .item_text {
+    font-size: 20px;
+    font-weight: 100;
+    color: #E5E6E5;
+    text-align: center;
+    margin: 0;
+}
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(1) {
+    margin-top: 235px;
+    position: relative;
+}
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(2) {
+    margin-top: 40px;
+}
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(3) {
+    margin-top: 235px;
+    position: relative;
+}
+.learn .learn_wrap .steps_block .item_wrap .item:nth-child(4) {
+    margin-top: 40px;
+}
+/* ========================= Program ====================== */
+.program {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000000;
+}
+.program .program_wrap {
+    padding: 30px 70px;
+}
+.program .program_wrap h2 {
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    color: #fff;
+}
+.program .program_wrap .program_container {
+    margin: 78px auto;
+    display: flex;
+    justify-content: center;
+}
+/* .program .program_wrap .program_container .program_info:nth-child(2) {
+    background-color: #F3511F;
+    height: 700px;
+    width: 500px;
+}
+.program .program_wrap .program_container .program_info:nth-child(2) h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 500;
+    margin: ;
+} */
+.program .program_wrap .program_container .taps {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+.program .program_wrap .program_container .taps img:nth-child(1) {
+    position: absolute;
+    top: 78%;
+    left: 4%;
+}
+.program .program_wrap .program_container .taps img:nth-child(2) {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    right: 4%;
+    bottom: 78%;
+}
+
+/* ===================== FAQ ======================= */
+.faq {
+    background-image: url('./image/bg_faq.png');
+    width: 100%;
+    height: 50vh;
+}
+
+.nav-buttons {
+    position: fixed;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.nav-buttons button {
+    padding: 5px;
+    background-color: #F3511F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #fff;
+}
